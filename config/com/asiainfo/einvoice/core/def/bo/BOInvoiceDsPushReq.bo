@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoiceDsPushReq" mainattr="PUSH_REQ_ID">
+    <mapingenty type="table">{INVOICE_DS_PUSH_REQ}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PUSH_REQ_ID" maxlength="11" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">PUSH_REQ_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_DS_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_DS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_WAY" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PUSH_WAY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_TARGET" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PUSH_TARGET</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT1" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT2" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT3" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT4" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT4</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT5" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT5</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoicePushTaskHis" mainattr="PUSH_TASK_ID">
+    <mapingenty type="table">{INVOICE_PUSH_TASK_HIS}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PUSH_TASK_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">PUSH_TASK_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_DS_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_DS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_INSTANCE_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_INSTANCE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_WAY" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PUSH_WAY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_TARGET" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PUSH_TARGET</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_CONTENT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PUSH_CONTENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">PUSH_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_RESULT" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PUSH_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REAMRKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REAMRKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

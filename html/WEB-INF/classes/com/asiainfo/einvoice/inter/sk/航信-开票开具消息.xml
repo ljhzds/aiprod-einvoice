@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<interface xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.chinatax.gov.cn/tirip/dataspec/interfaces.xsd"
+	version="DZFP1.0">
+	<!-- 全局信息 -->
+	<globalInfo>
+		<terminalCode>终端类型标识(0:B/S请求来源;1:C/S请求来源)</terminalCode>
+		<appId>DZFP</appId>
+		<version>接口版本</version>
+		<interfaceCode>接口编码</interfaceCode>
+		<userName>平台编码</userName>
+		<passWord>10位随机数+Base64({（10位随机数+注册码）MD5})</passWord>
+		<taxpayerId>纳税人识别号</taxpayerId>
+		<authorizationCode>接入系统平台授权码（由平台提供）</authorizationCode>
+		<requestCode>数据交换请求发出方代码</requestCode>
+		<requestTime>数据交换请求发出时间</requestTime>
+		<responseCode>数据交换请求接受方代码</responseCode>
+		<dataExchangeId>数据交换流水号</dataExchangeId>
+	</globalInfo>
+	<returnStateInfo>
+		<!-- 返回信息 -->
+		<returnCode>返回代码</returnCode>
+		<returnMessage>base64 返回描述</returnMessage>
+	</returnStateInfo>
+	<Data>
+		<!-- 交换数据 -->
+		<!-- 数据描述 -->
+		<dataDescription>
+			<zipCode>0,1</zipCode><!-- (0,1根据数据包大小判断是否进行压缩) -->
+			<encryptCode>0,1,2</encryptCode><!--(加密方式代码，0表示不用任何加密) -->
+			<codeType>0,3DES,CA</codeType><!--(三种加密方式代码，正式使用时通讯用CA) -->
+		</dataDescription>
+
+		<!-- base64请求数据内容或返回数据内容 -->
+		<content>
+			<!-- 需要交换的数据内容 -->
+			<REQUEST_FPKJXX class="REQUEST_FPKJXX ">
+				<!--发票头信息 -->
+				<FPKJXX_FPTXX class="FPKJXX_FPTXX">
+					<FPQQLSH>发票请求唯一流水号</FPQQLSH>
+					<DSPTBM>平台编码</DSPTBM>
+					
+					<NSRSBH>开票方识别号</NSRSBH>
+					<NSRMC>开票方名称</NSRMC>
+					<NSRDZDAH>开票方电子档案号</NSRDZDAH>
+					
+					<SWJG_DM>税务机构代码</SWJG_DM>
+					<DKBZ>代开标志</DKBZ>
+					<PYDM>票样代码</PYDM>
+					<KPXM>主要开票项目</KPXM>
+					
+					<XHF_NSRSBH>销货方识别号</XHF_NSRSBH>
+					<XHFMC>销货方名称</XHFMC>
+					<XHF_DZ>销货方地址</XHF_DZ>
+					<XHF_DH>销货方电话</XHF_DH>
+					<XHF_YHZH>销货方银行账号</XHF_YHZH>
+					
+					<GHFMC>购货方名称</GHFMC>
+					<GHF_NSRSBH>购货方识别号</GHF_NSRSBH>
+					<GHF_SF>购货方省份</GHF_SF>
+					<GHF_DZ>购货方地址</GHF_DZ>
+					<GHF_GDDH>购货方固定电话</GHF_GDDH>
+					<GHF_SJ>购货方手机</GHF_SJ>
+					<GHF_EMAIL>购货方邮箱</GHF_EMAIL>
+					<GHFQYLX>01</GHFQYLX>
+					<GHF_YHZH>01</GHF_YHZH>
+					
+					<HY_DM>行业代码</HY_DM>
+					<HY_MC>行业名称</HY_MC>
+					<KPY>开票员</KPY>
+					<SKY>收款员</SKY>
+					<FHR>复核人</FHR>
+					
+					<KPRQ>开票日期</KPRQ>
+					
+					<KPLX>开票类型</KPLX>
+					<YFP_DM>原发票代码</YFP_DM>
+					<YFP_HM>原发票号码</YFP_HM>
+					<CZDM>操作代码</CZDM>
+					<CHYY>冲红原因</CHYY>
+					<TSCHBZ>特殊冲红标志</TSCHBZ>
+					<KPHJJE>价税合计金额</KPHJJE>
+					<HJBHSJE>合计不含税金额</HJBHSJE>
+					<HJSE>合计税额</HJSE>
+					<BZ>备注</BZ>
+					<BYZD1>备用字段</BYZD1>
+					<BYZD2>备用字段</BYZD2>
+					<BYZD3>备用字段</BYZD3>
+					<BYZD4>备用字段</BYZD4>
+					<BYZD5>备用字段</BYZD5>
+				</FPKJXX_FPTXX>
+
+				<!-- 项目信息 -->
+				<FPKJXX_XMXXS class="FPKJXX_XMXX;" size="1">
+					<FPKJXX_XMXX>
+						<XMMC>项目名称</XMMC>
+						<XMDW>项目单位</XMDW>
+						<GGXH>规格型号</GGXH>
+						<XMSL>项目数量</XMSL>
+						<HSBZ>含税标志</HSBZ>
+						<XMDJ>项目单价</XMDJ>
+						<XMBM>项目编码</XMBM>
+						<XMJE>项目金额</XMJE>
+						<SL>税率</SL>
+						<SE>税额</SE>
+						<BYZD1>备用字段</BYZD1>
+						<BYZD2>备用字段</BYZD2>
+						<BYZD3>备用字段</BYZD3>
+						<BYZD4>备用字段</BYZD4>
+						<BYZD5>备用字段</BYZD5>
+					</FPKJXX_XMXX>
+				</FPKJXX_XMXXS>
+
+				<!-- 订单信息 -->
+				<FPKJXX_DDXX class="FPKJXX_DDXX">
+					<DDH>订单号</DDH>
+					<THDH>退货单号</THDH>
+					<DDDATE>订单时间</DDDATE>
+				</FPKJXX_DDXX>
+
+				<!-- 订单明细信息 -->
+				<FPKJXX_DDMXXXS class="FPKJXX_DDMXXX;" size="1">
+					<FPKJXX_DDMXXX>
+						<DDMC>订单名称</DDMC>
+						<DW>单位</DW>
+						<GGXH>规格型号</GGXH>
+						<SL>数量</SL>
+						<DJ>单价</DJ>
+						<JE>金额</JE>
+						<BYZD1>备用字段</BYZD1>
+						<BYZD2>备用字段</BYZD2>
+						<BYZD3>备用字段</BYZD3>
+						<BYZD4>备用字段</BYZD4>
+						<BYZD5>备用字段</BYZD5>
+					</FPKJXX_DDMXXX>
+				</FPKJXX_DDMXXXS>
+
+				<!-- 支付信息 -->
+				<FPKJXX_ZFXX class=" FPKJXX_ZFXX">
+					<ZFFS>支付方式</ZFFS>
+					<ZFLSH>支付流水号</ZFLSH>
+					<ZFPT>字符平台</ZFPT>
+				</FPKJXX_ZFXX>
+
+				<!-- 物流信息 -->
+				<FPKJXX_WLXX class=" FPKJXX_WLXX">
+					<CYGS>承运公司</CYGS>
+					<SHSJ>送货时间</SHSJ>
+					<WLDH>物流单号</WLDH>
+					<SHDZ>送货地址</SHDZ>
+				</FPKJXX_WLXX>
+
+			</REQUEST_FPKJXX>
+		</content>
+	</Data>
+</interface>

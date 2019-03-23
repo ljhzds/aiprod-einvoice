@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOBusiFeatureRelDef" mainattr="REL_DEF_ID">
+    <mapingenty type="table">BUSI_FEATURE_REL_DEF</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="REL_DEF_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">REL_DEF_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BUSI_TYPE" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BUSI_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE_CODE" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE_FIELD" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE_FIELD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

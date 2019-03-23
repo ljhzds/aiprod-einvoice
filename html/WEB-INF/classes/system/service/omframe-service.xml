@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="gb2312"?>
+<services>
+  <service id="com.ai.omframe.order.service.OrdCommonCreater" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrdCommonCreater"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrdOffOrdUserCreaterImpl"/>
+  </service>
+  <service id="com.ai.omframe.order.service.OrdOffOrdUserCreater" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrdOffOrdUserCreater"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrdOffOrdUserCreaterImpl"/>
+  </service>
+  <service id="com.ai.omframe.order.service.OrdOfferCreater" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrdOfferCreater"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrdOfferCreaterImpl"/>
+  </service>
+  <service id="com.ai.omframe.order.service.OrdPriceCreater" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrdPriceCreater"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrdPriceCreaterImpl"/>
+  </service>
+  <service id="com.ai.omframe.order.service.OrdSrvPkgCreater" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrdSrvPkgCreater"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrdSrvPkgCreaterImpl"/>
+  </service>
+  <service id="com.ai.omframe.order.service.OrdSrvpkgOrdSrvCreater" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrdSrvpkgOrdSrvCreater"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrdSrvpkgOrdSrvCreaterImpl"/>
+  </service>
+  <service id="com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV"/>
+    <property name="implClass" value="com.ai.omframe.teaminvoke.service.impl.OMWorkflowCommonSVImpl"/>
+  </service>
+  <service id="com.ai.omframe.instance.service.InstOffer" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.instance.service.interfaces.IInstOffer"/>
+    <property name="implClass" value="com.ai.omframe.instance.service.impl.InstOfferImpl"/>
+  </service>
+  <service id="com.ai.omframe.instance.service.InstOfferInsUser" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.instance.service.interfaces.IInstOfferInsUser"/>
+    <property name="implClass" value="com.ai.omframe.instance.service.impl.InstOfferInsUserImpl"/>
+  </service>
+  <service id="com.ai.omframe.instance.service.InstProcessBase" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.instance.service.interfaces.IInstProcessBase"/>
+    <property name="implClass" value="com.ai.omframe.instance.service.impl.InstProcessBaseImpl"/>
+  </service>
+  <service id="com.ai.omframe.instance.service.InstSrvAttr" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.instance.service.interfaces.IInstSrvAttr"/>
+    <property name="implClass" value="com.ai.omframe.instance.service.impl.InstSrvAttrImpl"/>
+  </service>
+  <service id="com.ai.omframe.instance.service.InstSrvpkg" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.instance.service.interfaces.IInstSrvpkg"/>
+    <property name="implClass" value="com.ai.omframe.instance.service.impl.InstSrvpkgImpl"/>
+  </service>
+  
+  
+  <service id="com.ai.omframe.instance.service.InstSrvpkgInsSrv" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.instance.service.interfaces.IInstSrvpkgInsSrv"/>
+    <property name="implClass" value="com.ai.omframe.instance.service.impl.InstSrvpkgInsSrvImpl"/>
+  </service>
+  <service id="com.ai.omframe.instance.service.InstPriceAttr" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.instance.service.interfaces.IInstPriceAttr"/>
+    <property name="implClass" value="com.ai.omframe.instance.service.impl.InstPriceAttrImpl"/>
+  </service>
+  <service id="com.ai.omframe.instance.service.InstanceAccrel" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.instance.service.interfaces.IInstanceAccrel"/>
+    <property name="implClass" value="com.ai.omframe.instance.service.impl.InstanceAccrelImpl"/>
+  </service>  
+  
+  <service id="com.ai.omframe.instance.service.InstUser" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.instance.service.interfaces.IInstUser"/>
+    <property name="implClass" value="com.ai.omframe.instance.service.impl.InstUserImpl"/>
+  </service>
+  <service id="com.ai.omframe.order.service.OrderQrySV" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrderQrySV"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrderQrySVImpl"/>
+  </service>
+  <service id="com.ai.omframe.order.service.OrderOVObjHelperSV" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrderOVObjHelperSV"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrderOVObjHelperSVImpl"/>
+  </service>
+  <service id="com.ai.omframe.order.service.SFuncDealSV" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.ISFuncDealSV"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.SFuncDealSVImpl"/>
+  </service>
+  <service id="com.ai.omframe.order.service.SoExtOrdConfig" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.ISoExtOrdConfig"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.SoExtOrdConfigImpl"/>
+  </service>
+  <service id="com.ai.omframe.OrderSaveService" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrderSaveHelperSV"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrderSaveHelperSVImpl"/>
+  </service>
+
+  <service id="com.ai.omframe.order.service.OrderVmHelperSV" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.order.service.interfaces.IOrderVmHelperSV"/>
+    <property name="implClass" value="com.ai.omframe.order.service.impl.OrderVmHelperSVImpl"/>
+  </service>
+  <service id="com.ai.omframe.common.service.PrjConstSV" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.ai.omframe.common.service.interfaces.IPrjConst"/>
+    <property name="implClass" value="com.asiainfo.crm.so.common.service.impl.PrjConstSVImpl"/>
+  </service>
+  <service id="com.asiainfo.crm.so.instance.rboss.service.interfaces.IBuildOrderAuditDiffSV" invoke="pojo" type="primitive">
+    <property name="interfaceClass" value="com.asiainfo.crm.so.instance.rboss.service.interfaces.IBuildOrderAuditDiffSV"/>
+    <property name="implClass" value="com.asiainfo.crm.so.instance.rboss.service.impl.BuildOrderAuditDiffSVImpl"/>
+  </service>
+  
+</services>

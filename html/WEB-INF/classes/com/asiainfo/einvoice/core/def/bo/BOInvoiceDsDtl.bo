@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoiceDsDtl" mainattr="INVOICE_DS_DETAIL_ID">
+    <mapingenty type="table">{INVOICE_DS_DTL}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="INVOICE_DS_DETAIL_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">INVOICE_DS_DETAIL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_DS_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_DS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEM_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ITEM_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEM_UNIT" maxlength="100" datatype="String" type="COL" remark="单位   如：个、台 等">
+        <mapingcol datatype="VARCHAR2">ITEM_UNIT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEM_NUMB" maxlength="6" datatype="Integer" type="COL">
+        <mapingcol datatype="NUMBER">ITEM_NUMB</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEM_PRICE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ITEM_PRICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEM_SPEC" maxlength="100" datatype="String" type="COL" remark="规格与型号">
+        <mapingcol datatype="VARCHAR2">ITEM_SPEC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEM_AMOUNT" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ITEM_AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEM_FAX_RATE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ITEM_FAX_RATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEM_FAX" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ITEM_FAX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SPBM" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SPBM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ZXBM" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ZXBM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HXBZ" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">HXBZ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FPXZ" maxlength="100" datatype="String" type="COL" remark="发票性质0：表示正常商品 1：表示折扣行 2：被折扣行">
+        <mapingcol datatype="VARCHAR2">FPXZ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT1" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT2" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT3" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT4" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT4</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT5" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT5</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

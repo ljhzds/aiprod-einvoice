@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoiceDs" mainattr="INVOICE_DS_ID">
+    <mapingenty type="table">{INVOICE_DS}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="INVOICE_DS_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">INVOICE_DS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BUSI_TYPE" maxlength="200" datatype="String" type="COL" remark="发生发票业务的CRM业务类型，电子发票从CRM业务现状整理归纳，提供枚举。
+主要供发票查询、统计功能。">
+        <mapingcol datatype="VARCHAR2">BUSI_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BILL_ID" maxlength="40" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BILL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CUST_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CUST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="USER_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">USER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ACCT_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ACCT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SO_ORDER_ID" maxlength="80" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SO_ORDER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SO_ORDER_SERIA" maxlength="80" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SO_ORDER_SERIA</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISSUING_CHANNEL" maxlength="40" datatype="String" type="COL" remark="申请开具发票的发起渠道">
+        <mapingcol datatype="VARCHAR2">ISSUING_CHANNEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISSUING_TYPE" maxlength="40" datatype="String" type="COL" remark="发票开票状态，不能为空：
+1：电子发票；
+2：纸质发票；
+">
+        <mapingcol datatype="VARCHAR2">ISSUING_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_TYPE" maxlength="40" datatype="String" type="COL" remark="1.电子通用机打发票
+2.电子增值税普通发票
+3.通用机打发票
+4.增值税普通发票
+5.增值税专用发票
+
+所开具发票的类型，如：通用机打发票、增值税普通发票、增值税专用发票、电子通用机打发票、电子增值税普通发票等，若发票类型为电子通用机打发票和电子增值税普通发票，那么“发票URL地址”字段不能为空。">
+        <mapingcol datatype="VARCHAR2">INVOICE_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_HEAD" maxlength="200" datatype="String" type="COL" remark="发票抬头显示的信息，如：个人、单位等。">
+        <mapingcol datatype="VARCHAR2">INVOICE_HEAD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_CONTENT" maxlength="200" datatype="String" type="COL" remark="所开具发票的内容，如办公用品、食品或产品明细等">
+        <mapingcol datatype="VARCHAR2">INVOICE_CONTENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOTAL_AMOUNT" maxlength="10" datatype="Long" type="COL" remark="向税控申请开具发票时，制定开具的具体金额：价税合计金额">
+        <mapingcol datatype="NUMBER">TOTAL_AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOTAL_TAX" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TOTAL_TAX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOTAL_PRICE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TOTAL_PRICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="KPF_SBH" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">KPF_SBH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="KPF_MC" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">KPF_MC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="KPF_DZDAH" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">KPF_DZDAH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="XHF_NSRSBH" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">XHF_NSRSBH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="XHF_NSRMC" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">XHF_NSRMC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="XHF_DZ" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">XHF_DZ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="XHF_DHHM" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">XHF_DHHM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="XHF_YHZH" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">XHF_YHZH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_NSRSBH" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_NSRSBH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_NSRMC" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_NSRMC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_DZ" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_DZ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_DHHM" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_DHHM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_YHZH" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_YHZH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_QYLX" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_QYLX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DKBZ" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">DKBZ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SKY" maxlength="80" datatype="String" type="COL" remark="受理的操作员">
+        <mapingcol datatype="VARCHAR2">SKY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="KPY" maxlength="80" datatype="String" type="COL" remark="开票的操作员">
+        <mapingcol datatype="VARCHAR2">KPY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FHY" maxlength="80" datatype="String" type="COL" remark="开票的操作员">
+        <mapingcol datatype="VARCHAR2">FHY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_ORG_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CREATE_ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_OP_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CREATE_OP_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DS_STATE" maxlength="1" datatype="String" type="COL" remark="未开具、开具中、已开具、已冲红">
+        <mapingcol datatype="CHAR">DS_STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT1" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT2" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT3" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT4" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT4</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT5" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT5</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

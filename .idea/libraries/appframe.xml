@@ -1,0 +1,38 @@
+<component name="libraryTable">
+  <library name="appframe">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/appframe/jms-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/msgframe-common1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/rowset.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/cometd-server-6.1.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/comframe30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/hawtbuf-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/pce.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/appframe_ext_flyingserver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/aischeduler.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/appframe_ext_exeframe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/appframe_ext_memcached.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/appframe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/jetty-util5-6.1.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/secframe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/appframe_ext_flyingclient.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/jetty-util-6.1.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/msgframe-consumer1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/activemq-client-5.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/omframe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/geronimo-j2ee-management_1.1_spec-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/pce_studio_fs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/bce.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/activemq-client-5.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/appframe_ext_exeframe_remote_client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/ailogger.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/jetty.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/appframe-extframe-msg.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/appframe/msgframe-producer1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

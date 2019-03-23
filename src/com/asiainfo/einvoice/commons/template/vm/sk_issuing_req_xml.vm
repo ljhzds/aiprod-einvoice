@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.chinatax.gov.cn/tirip/dataspec/interfaces.xsd" version="DZFP1.0">
+    <globalInfo>
+        <terminalCode>$GLOBAL_INFO.TERMINAL_CODE</terminalCode>
+        <appId>DZFP</appId>
+        <version>$GLOBAL_INFO.VERSION</version>
+        <interfaceCode>$GLOBAL_INFO.INTERFACE_CODE</interfaceCode>
+        <userName>$GLOBAL_INFO.USER_NAME</userName>
+        <passWord>$GLOBAL_INFO.PASS_WORD</passWord>
+        <taxpayerId>$GLOBAL_INFO.TAXPAYER_ID</taxpayerId>
+        <authorizationCode>$GLOBAL_INFO.AUTHORIZATION_CODE</authorizationCode>
+        <requestCode>$GLOBAL_INFO.REQUEST_CODE</requestCode>
+        <requestTime>$GLOBAL_INFO.REQUEST_TIME</requestTime>
+        <responseCode></responseCode>
+        <dataExchangeId>$GLOBAL_INFO.DATA_EXCHANGE_ID</dataExchangeId>
+    </globalInfo>
+    <returnStateInfo>
+        <returnCode></returnCode>
+        <returnMessage></returnMessage>
+    </returnStateInfo>
+    <Data>
+        <dataDescription>
+            <zipCode>$DATA_DESCRIPTION.ZIP_CODE</zipCode>
+            <encryptCode>$DATA_DESCRIPTION.ENCRYPT_CODE</encryptCode>
+            <codeType>$DATA_DESCRIPTION.CODE_TYPE</codeType>
+        </dataDescription>
+        <content>
+            $CONTENT
+        </content>
+    </Data>
+</interface>

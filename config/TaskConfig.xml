@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<tasks>
+	<group title="系统任务" type="system" isvisible="true">
+		<task type="start" title="开始"
+			templateclass="com.ai.comframe.vm.template.impl.TaskStartTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskStartImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskStartCell"
+			studioPic="flow/task/start.png"
+			studioPartClass="com.ai.studio.ui.part.node.StartNodeEditPartForSrv" />
+		<task type="finish" title="结束"
+			templateclass="com.ai.comframe.vm.template.impl.TaskFinishTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskFinishImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskFinishCell"
+			studioPic="flow/task/end.png"
+			studioPartClass="com.ai.studio.ui.part.node.FinishNodeEditPartForSrv" />
+		<task type="auto" title="自动"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoCell"
+			studioPic="flow/task/auto.png"
+			studioPartClass="com.ai.studio.ui.part.node.AutoNodeEditPartForSrv" />
+		<task type="user" title="人工任务"
+			templateclass="com.ai.comframe.vm.template.impl.TaskUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskUserImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskUserCell"
+			studioPic="flow/task/Artificially-task.png"
+			studioPartClass="com.ai.studio.ui.part.node.UserNodeEditPartForSrv" />
+		<task type="sign" title="会签"
+			templateclass="com.ai.comframe.vm.template.impl.TaskSignTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskSignImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskUserCell"
+			studioPic="flow/task/sign.png"
+			studioPartClass="com.ai.studio.ui.part.node.SignNodeEditPartForSrv" />
+		<task type="shell" title="Shell"
+			templateclass="com.ai.comframe.vm.template.impl.TaskShellTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskShellImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskShellCell"
+			studioPic="flow/task/shell.png"
+			studioPartClass="com.ai.studio.ui.part.node.ShellNodeEditPart" />
+		<task type="decision" title="条件判断"
+			templateclass="com.ai.comframe.vm.template.impl.TaskDecisionConditionTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskDecisionConditionImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskDecisionConditionCell"
+			studioPic="flow/task/conditionjudgment.png"
+			studioPartClass="com.ai.studio.ui.part.node.DecisionNodeEditPart" />
+		<task type="autodecision" title="自动判断"
+			templateclass="com.ai.comframe.vm.template.impl.TaskDecisionAutoTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskDecisionAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskDecisionAutoCell"
+			studioPic="flow/task/judgment_automatic.png"
+			studioPartClass="com.ai.studio.ui.part.node.AutoDecisionNodeEditPartForSrv" />
+		<task type="enddecision" title="判断结束"
+			templateclass="com.ai.comframe.vm.template.impl.TaskDecisionEndTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskNullImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskDecisionEndCell"
+			studioPic="flow/task/judgmentover.png"
+			studioPartClass="com.ai.studio.ui.part.node.EndDecisionNodeEditPart" />
+		<task type="loop" title="循环"
+			templateclass="com.ai.comframe.vm.template.impl.TaskLoopTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskLoopImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskLoopCell"
+			studioPic="flow/task/cycle.png"
+			studioPartClass="com.ai.studio.ui.part.node.LoopNodeEditPart" />
+		<task type="endloop" title="循环结束"
+			templateclass="com.ai.comframe.vm.template.impl.TaskLoopEndTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskNullImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskLoopEndCell"
+			studioPic="flow/task/cycle-end.png"
+			studioPartClass="com.ai.studio.ui.part.node.EndLoopNodeEditPart" />
+		<task type="break" title="break"
+			templateclass="com.ai.comframe.vm.template.impl.TaskBreakTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskNullImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskBreakCell"
+			studioPic="flow/task/break.png"
+			studioPartClass="com.ai.studio.ui.part.node.BreakNodeEditPart" />
+		<task type="continue" title="continue"
+			templateclass="com.ai.comframe.vm.template.impl.TaskContinueTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskNullImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskContinueCell"
+			studioPic="flow/task/continue.png"
+			studioPartClass="com.ai.studio.ui.part.node.ContinueNodeEditPart" />
+		<task type="childworkflow" title="子流程"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic="flow/task/process_child.png"
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowNodeEditPartForSrv" />
+		<task type="event" title="业务事件"
+			templateclass="com.ai.comframe.vm.template.impl.TaskEventTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskEventImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskEventCell"
+			studioPic="flow/task/event.png"
+			studioPartClass="com.ai.studio.ui.part.node.BizEventNodeEditPart" />
+	</group>
+	<group title="工作流任务" type="workflow" isvisible="true">
+		<task type="timer" title="定时器"
+			templateclass="com.ai.comframe.vm.template.impl.TaskTimerTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskTimerImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskTimerCell"
+			studioPic="flow/busi/timer.png"
+			studioPartClass="com.ai.studio.ui.part.node.TimerNodeEditPart" />
+		<task type="fork" title="Fork"
+			templateclass="com.ai.comframe.vm.template.impl.TaskForkTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskNullImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAndOrCell"
+			studioPic="flow/busi/fork.png"
+			studioPartClass="com.ai.studio.ui.part.node.ForkNodeEditPart" />
+		<task type="and" title="AND"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAndTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAndImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAndOrCell"
+			studioPic="flow/busi/and.png"
+			studioPartClass="com.ai.studio.ui.part.node.AndNodeEditPart" />
+		<task type="or" title="OR"
+			templateclass="com.ai.comframe.vm.template.impl.TaskOrTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskOrImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAndOrCell"
+			studioPic="flow/busi/or.png"
+			studioPartClass="com.ai.studio.ui.part.node.OrNodeEditPart" />
+		<task type="mail" title="发送邮件"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="flow/busi/email.png"
+			studioPartClass="com.ai.studio.ui.part.node.SendMailNodeEditPart">
+			<autodeal>
+				<runtype>pojo</runtype>
+				<servicename />
+				<runclassname>
+					com.ai.comframe.vm.task.SendMail
+				</runclassname>
+				<runfunctionname>send</runfunctionname>
+				<vars name="addr" datatype="String" inouttype="in"
+					description="邮件地址,逗号分隔" />
+				<vars name="ccAddr" datatype="String" inouttype="in"
+					description="抄送地址,逗号分隔" />
+				<vars name="subject" datatype="String" inouttype="in"
+					description="主题" />
+				<vars name="body" datatype="String" inouttype="in"
+					description="正文" />
+				<vars name="files" datatype="String" inouttype="in"
+					description="附件" />
+				<vars name="return" datatype="boolean"
+					inouttype="return" />
+			</autodeal>
+		</task>
+		<task type="isOverTime" title="是否超时"
+			templateclass="com.ai.comframe.vm.template.impl.TaskDecisionAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskDecisionAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskDecisionAutoUserCell"
+			studioPic="flow/busi/overtime.png"
+			studioPartClass="com.ai.studio.ui.part.node.OverTimeNodeEditPart">
+			<autodeal>
+				<runtype>pojo</runtype>
+				<servicename />
+				<runclassname>com.ai.comframe.vm.task.SysTask</runclassname>
+				<runfunctionname>isOverTime</runfunctionname>
+				<vars name="inDate" datatype="java.sql.Date"
+					inouttype="in" />
+				<vars name="return" datatype="boolean"
+					inouttype="return" />
+			</autodeal>
+		</task>
+	</group>
+	<group title="OMFRAME零件库" type="OMFRAME_LIB0" isvisible="true">
+		<task type="lib0.OrdDelBatchSrvpkgs" title="删除多个产品"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic="obj/default.gif"
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child
+				code="com.ai.omframe.order.vm.lib0.OrdDelBatchSrvpkgs" name="删除产品订单"
+				type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aOVOrdOffOrdUser"
+					datatype="com.ai.omframe.order.ivalues.IOVOrdOffOrdUser"
+					inouttype="in" />
+				<vars name="insOfferId" datatype="long" inouttype="in" />
+				<vars name="REGION_ID" datatype="java.lang.String"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+			</child>
+		</task>
+		<task type="lib0.OrdDelOffer" title="删除策划"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib0.OrdDelOffer"
+				name="删除策划" type="process">
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib0.OrdDelSrvpkg" title="删除单个产品"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib0.OrdDelSrvpkg"
+				name="删除产品" type="process">
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aOVOrdOffOrdUser"
+					datatype="com.ai.omframe.order.ivalues.IOVOrdOffOrdUser"
+					inouttype="in" />
+				<vars name="aInsSrvpkgValue"
+					datatype="com.ai.omframe.instance.ivalues.IInsSrvpkgValue"
+					defaultvalue="" inouttype="in" />
+				<vars name="soServicepkgData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoServicePkgData"
+					defaultvalue="" inouttype="in" description="" />
+				<vars name="REGION_ID" datatype="java.lang.String"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="offerInsId" datatype="long"
+					inouttype="in" />
+			</child>
+		</task>
+		<task type="lib0.OrdModiBatchSrvpkg" title="修改多个产品"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child
+				code="com.ai.omframe.order.vm.lib0.OrdModiBatchSrvpkgs"
+				name="修改多个产品" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" description="" />
+				<vars name="aOVOrdOffOrdUser"
+					datatype="com.ai.omframe.order.ivalues.IOVOrdOffOrdUser"
+					inouttype="in" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib0.OrdModiOffer" title="修改策划"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib0.OrdModiOffer"
+				name="修改策划" type="process">
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib0.OrdModiSrvpkg" title="修改单个产品"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib0.OrdModiSrvpkg"
+				name="修改单个产品" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrdOffOrdUser"
+					datatype="com.ai.omframe.order.ivalues.IOVOrdOffOrdUser"
+					inouttype="in" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aSoServicePkgData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoServicePkgData"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+				<vars name="offerInsId" datatype="long" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib0.OrdNewBatchSrvpkgs" title="新建多个产品"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child
+				code="com.ai.omframe.order.vm.lib0.OrdNewBatchSrvpkgs" name="新建多个产品"
+				type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aOVOrdOffOrdUser"
+					datatype="com.ai.omframe.order.ivalues.IOVOrdOffOrdUser"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib0.OrdNewOffer" title="新建策划"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib0.OrdNewOffer"
+				name="新建策划" type="process">
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib0.OrdNewSrvpkg" title="新建单个产品"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib0.OrdNewSrvpkg"
+				name="新建单个产品" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" description="" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" description="" />
+				<vars name="aOVOrdOffOrdUser"
+					datatype="com.ai.omframe.order.ivalues.IOVOrdOffOrdUser"
+					inouttype="in" />
+				<vars name="aSoServicePkgData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoServicePkgData"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib0.OrdOfferUserPrice" title="新建营业费用"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib0.OrdOfferUserPrice"
+				name="新建营业费用" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrdOffOrdUser"
+					datatype="com.ai.omframe.order.ivalues.IOVOrdOffOrdUser"
+					inouttype="in" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+	</group>
+	<group title="OMFRAME一级组件库" type="OMFRAME_LIB1" isvisible="true">
+		<task type="lib1.OrdAddMem" title="增加成员"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.OrdAddMem"
+				name="增加成员" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					contextvarName="" inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="realBusinessId" datatype="long"
+					defaultvalue="" inouttype="in" description="真实操作ID" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+				<vars name="FLOWOBJECT_CHILD_TASK_CODE"
+					datatype="String" inouttype="in" description="子流程模板编码" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+			</child>
+		</task>
+		<task type="lib1.OrdAddMemFromOrd" title="从订单中增加成员"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.OrdAddMemFromOrd"
+				name="增加成员" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib1.OrdDelMainUser" title="删除主用户"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.OrdDelMainUser"
+				name="删除主用户" type="process">
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aBillId" datatype="java.lang.String"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib1.OrdDelMem" title="删除成员"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.OrdDelMem"
+				name="删除成员" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aBillId" datatype="java.lang.String"
+					inouttype="in" description="如果传入用户计费号，则据此创建用户订单" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+				<vars name="realBusinessId" datatype="long"
+					inouttype="in" />
+			</child>
+		</task>
+		<task type="lib1.OrdDropOffer" title="退订增值策划"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.OrdDropOffer"
+				name="退订增值策划" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="aBillId" datatype="java.lang.String"
+					inouttype="in" description="如果传入用户计费号，则据此创建用户订单" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib1.OrdModiMem" title="修改成员"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.OrdModiMem"
+				name="修改成员" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib1.OrdModiUserOffer" title="用户订购变更"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.OrdModiUserOffer"
+				name="用户订购变更" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib1.OrdOpenNewOffer" title="订购增值策划"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.OrdOpenNewOffer"
+				name="订购增值策划" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib1.OrdOpenNewUser" title="开户"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.OrdOpenNewUser"
+				name="开户" type="process">
+				<vars name="aSoUserData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoUserData"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="lib1.saveOVOrdOffer" title="保存策划订单"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>saveOVOrdOffer</runfunctionname>
+				<vars name="P_0"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					contextvarName="" inouttype="in" description="" />
+				<vars name="P_1" datatype="String"
+					contextvarName="REGION_ID" defaultvalue="" inouttype="in"
+					description="" />
+				<vars name="return" datatype="long" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.updateUserOrderProp" title="更新属性映射表"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.order.service.interfaces.IOrderSaveHelperSV</servicename>
+				<runclassname>com.ai.omframe.order.service.interfaces.IOrderSaveHelperSV</runclassname>
+				<runfunctionname>updateUserOrderProp</runfunctionname>
+				<vars name="P_0" datatype="long" contextvarName=""
+					inouttype="in" description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.transOrderToHis" title="转移竣工订单"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>transOrderToHis</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.finishOrderOffer" title="策划订单竣工"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>finishOrderOffer</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.finishOrderCust" title="客户订单竣工"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>finishOrderCust</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.cancelOrderOffer" title="策划订单撤单"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>cancelOrderOffer</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="boolean"
+					inouttype="return" description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.cancelOrderCust" title="客户订单撤单"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>cancelOrderCust</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="boolean"
+					inouttype="return" description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.setInstOfferState" title="设置策划实例状态"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>setInstOfferState</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="P_1" datatype="int" inouttype="in"
+					description="" />
+				<vars name="return" datatype="boolean"
+					inouttype="return" description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.cancelOrderCustDirectly" title="客户订单及其策划订单撤单"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>cancelOrderCustDirectly</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="客户订单号" />
+				<vars name="return" datatype="boolean"
+					inouttype="return" description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.calcelOrderOfferByMsg" title="策划订单撤单，记录撤单原因"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>cancelOrderOfferByMsg</runfunctionname>
+				<vars name="P_0" datatype="long" contextvarName=""
+					inouttype="in" description="" />
+				<vars name="P_1" datatype="java.lang.String"
+					inouttype="in" description="" />
+				<vars name="return" datatype="boolean"
+					inouttype="return" description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.CreateCommOrder" title="创建单点通用订单"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib1.CreateCommOrder"
+				name="创建单点通用订单" type="process">
+				<vars name="customerOrderId" datatype="long"
+					defaultvalue="" inouttype="in" description="用于装载数据" />
+				<vars name="aOVOrderOffer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderOffer"
+					inouttype="out" />
+				<vars name="workflowId" datatype="long" inouttype="in"
+					description="先放着" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+				<vars name="FLOWOBJECT_CHILD_TASK_CODE"
+					datatype="String" inouttype="in" description="子流程模板编码" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+			</child>
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename />
+				<runclassname />
+				<runfunctionname />
+			</autodeal>
+		</task>
+		<task type="lib1.CreateOrdUserOsState"
+			title="Create user OS State order"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.order.service.OrdOffOrdUserCreater</servicename>
+				<runclassname>com.ai.omframe.order.service.interfaces.IOrdOffOrdUserCreater</runclassname>
+				<runfunctionname>createOrdUserOsStateValue</runfunctionname>
+				<vars name="P_0"
+					datatype="com.ai.omframe.order.ivalues.IOrdUserValue"
+					contextvarName="" inouttype="in" description="" />
+				<vars name="P_1" datatype="String" inouttype="in" description=""/>
+				<vars name="return"
+					datatype="com.ai.omframe.order.ivalues.IOrdUserOsStateValue"
+					inouttype="return" description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.CreateOrdUserOsStateFromInst"
+			title="Create user OS State order From Instance"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.order.service.OrdOffOrdUserCreater</servicename>
+				<runclassname>com.ai.omframe.order.service.interfaces.IOrdOffOrdUserCreater</runclassname>
+				<runfunctionname>createOrdUserOsStateValueFromInst</runfunctionname>
+				<vars name="P_0"
+					datatype="com.ai.omframe.order.ivalues.IOrdUserValue"
+					contextvarName="" inouttype="in" description="" />
+				<vars name="P_1" datatype="String" inouttype="in" description=""/>
+				<vars name="return"
+					datatype="com.ai.omframe.order.ivalues.IOrdUserOsStateValue"
+					inouttype="return" description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.finishOrderCustExt" title="客户订单竣工（扩展）"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>setOrderCustAndExtendOrdersFinished</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="lib1.cancelOrderCustExt" title="客户订单撤单（扩展）"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMWorkflowCommonSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMWorkflowCommonSV</runclassname>
+				<runfunctionname>setOrderCustAndExtendOrdersCanceled</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="P_0" datatype="java.lang.String"
+					inouttype="in" description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+	</group>
+	<group title="OMFRAME二级组件库" type="OMFRAME_LIB2" isvisible="true">
+		<task type="lib2.OrdDropUser" title="销户"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.order.vm.lib2.OrdDropUser"
+				name="销户" type="process">
+				<vars name="aSoOfferData"
+					datatype="com.ai.omframe.order.data.ivalues.ISoOfferData"
+					inouttype="in" />
+				<vars name="aOVOrderCustomer"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="aOrderValueChain"
+					datatype="com.ai.omframe.order.valuebean.OrderValueChain"
+					inouttype="in" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="modifyOrd.OrdModifyMain" title="改单主流程"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child
+				code="com.ai.omframe.order.vm.modifyOrd.OrdModifyMain"
+				name="OrdModifyMain" type="process">
+				<vars name="customerOrderId" datatype="long"
+					inouttype="in" />
+				<vars name="soUserDataKey" datatype="long"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+		<task type="TransInsUnit" title="转实例单元"
+			templateclass="com.ai.comframe.vm.template.impl.TaskWorkflowUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskWorkflowImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskWorkflowCell"
+			studioPic=""
+			studioPartClass="com.ai.studio.ui.part.node.WorkFlowUserNodeEditPart">
+			<child code="com.ai.omframe.instance.vm.TransInsUnit"
+				name="TransInsUnit" type="process">
+				<vars name="orderOfferId" datatype="long"
+					inouttype="in" />
+				<vars name="FLOWOBJECT_TYPE" datatype="String"
+					inouttype="in" description="子流程的业务对象类型" />
+				<vars name="FLOWOBJECT_ID" datatype="String"
+					inouttype="in" description="子流程的业务对象编号" />
+				<vars name="CREATE_STAFF" datatype="String"
+					inouttype="in" description="流程创建人员" />
+				<vars name="REGION_ID" datatype="String" inouttype="in" />
+			</child>
+		</task>
+	</group>
+	<group title="浙江CRM项目组件库" type="EndToEndLib" isvisible="true">
+		<task type="updateCountryCode" title="更新实例表的县区编码(适用于成员添加)"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMExtCenterSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMExtCenterSV</runclassname>
+				<runfunctionname>updateCountryCode</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="updateCmCountryCode" title="更新实例表的县区编码"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMExtCenterSV</servicename>
+				<runclassname>com.ai.omframe.teaminvoke.service.interfaces.IOMExtCenterSV</runclassname>
+				<runfunctionname>updateCmCountryCode</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="discoverCancel" title="是否所有策划订单被撤销"
+			templateclass="com.ai.comframe.vm.template.impl.TaskDecisionAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskDecisionAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskDecisionAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/user.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoDecisionUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.asiainfo.crm.so.order.bboss.service.interfaces.IZJBbossSoVMInvokeSV</servicename>
+				<runclassname>com.asiainfo.crm.so.order.bboss.service.interfaces.IZJBbossSoVMInvokeSV</runclassname>
+				<runfunctionname>isAllOffOrderCancelbyProdSpecId</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="P_1" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="boolean"
+					inouttype="return" description="" />
+			</autodeal>
+		</task>
+		<task type="dealGroupOrderInfo" title="集团公共信息处理"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.asiainfo.crm.so.order.bboss.service.interfaces.IZJBbossSoVMInvokeSV</servicename>
+				<runclassname>com.asiainfo.crm.so.order.bboss.service.interfaces.IZJBbossSoVMInvokeSV</runclassname>
+				<runfunctionname>dealGroupOrderInfo</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="P_1" datatype="long" inouttype="in"
+					description="" />
+				<vars name="P_2" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="boolean"
+					inouttype="return" description="" />
+			</autodeal>
+		</task>
+		<task type="saveAuditData" title="保存稽核数据"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.asiainfo.crm.so.order.bboss.service.interfaces.IZJBbossSoVMInvokeSV</servicename>
+				<runclassname>com.asiainfo.crm.so.order.bboss.service.interfaces.IZJBbossSoVMInvokeSV</runclassname>
+				<runfunctionname>saveAuditData</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="saveGroupID2OrdDtlInfo" title="回填集团编号到ORD_DTL_INFO"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.asiainfo.crm.so.order.bboss.service.interfaces.IZJBbossSoVMInvokeSV</servicename>
+				<runclassname>com.asiainfo.crm.so.order.bboss.service.interfaces.IZJBbossSoVMInvokeSV</runclassname>
+				<runfunctionname>saveGroupID2OrdDtlInfo</runfunctionname>
+				<vars name="P_0" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+		<task type="updateCmCountryCodeByOfferOrderId"
+			title="更新实例表县市代码(使用策划订单号)"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.ai.omframe.teaminvoke.service.OMExtCenterSV</servicename>
+				<runclassname>com.asiainfo.boss.teaminvoke.service.interfaces.IZJBbossOMExtCenterSV</runclassname>
+				<runfunctionname>updateCmCountryCodeByOfferOrderId</runfunctionname>
+				<vars name="P_0" datatype="long" contextvarName=""
+					inouttype="in" description="" />
+				<vars name="P_1" datatype="long" inouttype="in"
+					description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+	</group>
+	<group title="送开通接口" type="Open2Crm" isvisible="true">
+		<task type="sendOrderInfoToOpen" title="营业送开通接口"
+			templateclass="com.ai.comframe.vm.template.impl.TaskAutoUserTemplateImpl"
+			executeclass="com.ai.comframe.vm.engine.impl.TaskAutoImpl"
+			studioDisplayClass="com.ai.comframe.vm.studio.task.TaskAutoUserCell"
+			studioPic="com/ai/comframe/vm/studio/imag/auto.gif"
+			studioPartClass="com.ai.studio.ui.part.node.AutoUserNodeEditPart">
+			<autodeal>
+				<runtype>service</runtype>
+				<servicename>com.asiainfo.crm.so.teaminvoke.in.service.interfaces.IOpen2CrmSV</servicename>
+				<runclassname>com.asiainfo.crm.so.teaminvoke.in.service.interfaces.IOpen2CrmSV</runclassname>
+				<runfunctionname>sendOrderInfoToOpen</runfunctionname>
+				<vars name="P_0"
+					datatype="com.ai.omframe.order.ivalues.IOVOrderCustomer"
+					contextvarName="aOVOrderCustomer" inouttype="in" description="" />
+				<vars name="return" datatype="void" inouttype="return"
+					description="" />
+			</autodeal>
+		</task>
+	</group>
+</tasks>

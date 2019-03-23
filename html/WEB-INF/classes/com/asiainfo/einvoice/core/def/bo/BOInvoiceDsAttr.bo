@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoiceDsAttr" mainattr="ATTR_ID">
+    <mapingenty type="table">{INVOICE_DS_ATTR}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ATTR_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">ATTR_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_DS_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_DS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ATTR_CODE" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ATTR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ATTR_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ATTR_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ATTR_VAL" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ATTR_VAL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ATTR_VAL_DESC" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ATTR_VAL_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

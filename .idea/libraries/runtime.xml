@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="runtime">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/runtime/xmlParserAPIs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/runtime/jbcl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/runtime/ant.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/runtime/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/runtime/ant-jsch.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/runtime/ojdbc5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/runtime/mx4j-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/runtime/j2ee.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/runtime/junit.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

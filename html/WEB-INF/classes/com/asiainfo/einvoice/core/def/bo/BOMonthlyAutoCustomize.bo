@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOMonthlyAutoCustomize" mainattr="CUSTOMIZE_ID">
+    <mapingenty type="table">{MONTHLY_AUTO_CUSTOMIZE}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="CUSTOMIZE_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">CUSTOMIZE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BILL_ID" maxlength="80" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BILL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CUST_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CUST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="USER_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">USER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ACCT_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ACCT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISSUING_TIME" maxlength="80" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ISSUING_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_WAY" maxlength="80" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PUSH_WAY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_OBJ" maxlength="80" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PUSH_OBJ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PUSH_TIME" maxlength="80" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PUSH_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_NSRSBH" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_NSRSBH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_NSRMC" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_NSRMC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_DZ" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_DZ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_DHHM" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_DHHM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_YHZH" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_YHZH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GHF_QYLX" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GHF_QYLX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_ORG_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CREATE_ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_OP_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CREATE_OP_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OP_ORG_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">OP_ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OP_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">OP_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OP_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OP_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRE_ISSUING_MARK" maxlength="40" datatype="String" type="COL" remark="自动开票成功后，回填最近一次所开发票的年月。
+因用户欠费暂停自动开具，后续充值后，补开期间未开月份的发票。">
+        <mapingcol datatype="VARCHAR2">PRE_ISSUING_MARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL" remark="1启用、0停用">
+        <mapingcol datatype="CHAR">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

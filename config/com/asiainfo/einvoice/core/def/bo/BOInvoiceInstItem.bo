@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoiceInstItem" mainattr="INVOICE_INSTANCE_ITEM_ID">
+    <mapingenty type="table">{INVOICE_INST_ITEM}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="INVOICE_INSTANCE_ITEM_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">INVOICE_INSTANCE_ITEM_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_INSTANCE_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_INSTANCE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_DS_DETAIL_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_DS_DETAIL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

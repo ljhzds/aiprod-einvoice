@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoicePresInst" mainattr="INVOICE_INSTANCE_ID">
+    <mapingenty type="table">{INVOICE_PERS_INST}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="INVOICE_INSTANCE_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">INVOICE_INSTANCE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PERSISTENT_TYPE" maxlength="40" datatype="String" type="COL" remark="存储的平台的类型：
+如:FTP、内容管理平台等">
+        <mapingcol datatype="VARCHAR2">PERSISTENT_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PERSISTENT_KEY" maxlength="100" datatype="String" type="COL" remark="内容管理平台提供的文件标识">
+        <mapingcol datatype="VARCHAR2">PERSISTENT_KEY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PERSISTENT_PATH" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PERSISTENT_PATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="URL" maxlength="500" datatype="String" type="COL" remark="发票URL地址，该地址可通过外网进行访问和下载">
+        <mapingcol datatype="VARCHAR2">URL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_ORG_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CREATE_ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_OP_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CREATE_OP_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

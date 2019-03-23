@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoiceDsDispatch" mainattr="DISPATCH_ID">
+    <mapingenty type="table">{INVOICE_DS_DISPATCH}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DISPATCH_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">DISPATCH_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DISPATCH_KIND" maxlength="40" datatype="String" type="COL" remark="调度任务类型：
+ASYNC_ISSUING：异步开票任务
+ASYNC_DL_PDF ：异步下载pdf文件">
+        <mapingcol datatype="VARCHAR2">DISPATCH_KIND</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_DS_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_DS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_INSTANCE_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_INSTANCE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXECUTE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">EXECUTE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DISPATCH_COUNT" maxlength="3" datatype="Integer" type="COL">
+        <mapingcol datatype="NUMBER">DISPATCH_COUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DISPATCH_RESULT" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DISPATCH_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TARGET_SHARDING" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TARGET_SHARDING</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

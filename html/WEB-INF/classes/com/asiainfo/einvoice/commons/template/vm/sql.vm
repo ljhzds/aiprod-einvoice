@@ -1,0 +1,10 @@
+SELECT data.* FROM $table data WHERE 1=1
+#foreach($param in $params)
+    #if($param.Value.length() > 0)
+        #if($param.Op == 'BETWEEN' || $param.Op == 'IN')
+        AND $param.Param $param.Op ($param.Value)
+        #else
+        AND $param.Param $param.Op $param.Value
+        #end
+    #end
+#end

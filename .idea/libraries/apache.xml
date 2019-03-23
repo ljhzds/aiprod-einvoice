@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="apache">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-lang-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-fileupload-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/geronimo-stax-api_1.0_spec-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/zookeeper-3.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/poi_all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-codec-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-httpclient-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-io-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/jakarta-oro.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/jakarta-regexp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/ooxml-schemas-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-dbcp-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-net-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-digester-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/xmlbeans-2.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/ecs-1.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-pool2-2.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-collections-3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-jexl-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/velocity-1.4-rc1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/poi-2.5.1-final-20040804.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-configuration-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-beanutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-pool-1.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apache/commons-discovery.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

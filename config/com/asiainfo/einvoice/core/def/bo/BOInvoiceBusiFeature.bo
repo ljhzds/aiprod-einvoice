@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoiceBusiFeature" mainattr="INVOICE_DS_ID">
+    <mapingenty type="table">{INVOICE_BUSI_FEATURE}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="INVOICE_DS_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">INVOICE_DS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE1" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE2" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE3" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE4" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE4</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE5" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE5</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE6" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE6</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE7" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE7</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE8" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE8</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE9" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE9</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FEATURE10" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FEATURE10</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

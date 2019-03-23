@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="base" name="BOInvoiceInst" mainattr="INVOICE_INSTANCE_ID">
+    <mapingenty type="table">{INVOICE_INST}</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="INVOICE_INSTANCE_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">INVOICE_INSTANCE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_DS_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_DS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISSUING_CHANNEL" maxlength="40" datatype="String" type="COL" remark="申请开具发票的发起渠道">
+        <mapingcol datatype="VARCHAR2">ISSUING_CHANNEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISSUING_TYPE" maxlength="40" datatype="String" type="COL" remark="发票开票状态，不能为空：
+1：电子发票；
+2：纸质发票；
+">
+        <mapingcol datatype="VARCHAR2">ISSUING_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISSUING_FLAG" maxlength="1" datatype="String" type="COL" remark="发票开票标识
+1：正常发票
+2：已冲红
+3：红字发票
+">
+        <mapingcol datatype="CHAR">ISSUING_FLAG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_TYPE" maxlength="40" datatype="String" type="COL" remark="1.电子通用机打发票
+2.电子增值税普通发票
+3.通用机打发票
+4.增值税普通发票
+5.增值税专用发票
+
+所开具发票的类型，如：通用机打发票、增值税普通发票、增值税专用发票、电子通用机打发票、电子增值税普通发票等，若发票类型为电子通用机打发票和电子增值税普通发票，那么“发票URL地址”字段不能为空。">
+        <mapingcol datatype="VARCHAR2">INVOICE_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_HEAD" maxlength="200" datatype="String" type="COL" remark="发票抬头显示的信息，如：个人、单位等。">
+        <mapingcol datatype="VARCHAR2">INVOICE_HEAD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_CONTENT" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">INVOICE_CONTENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_CODE" maxlength="200" datatype="String" type="COL" remark="请求税控开具电子发票成功后，返回 发票代码
+增值税专用发票代码（共十位），前四位为省、市、区行政区编码，第五、六位为年号编码，第七位为季度，第八位为语言代码，第九位为联次代码，第十位为发票的金额版本号">
+        <mapingcol datatype="VARCHAR2">INVOICE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_NUMBER" maxlength="200" datatype="String" type="COL" remark="请求税控开具电子发票成功后，返回 发票号码">
+        <mapingcol datatype="VARCHAR2">INVOICE_NUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_VERIFY_CODE" maxlength="200" datatype="String" type="COL" remark="采用国家密码管理局批准的商用密码算法，保证电子发票的真实性和唯一性">
+        <mapingcol datatype="VARCHAR2">INVOICE_VERIFY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OLD_INVOICE_CODE" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OLD_INVOICE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OLD_INVOICE_NUMBER" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OLD_INVOICE_NUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OLD_INVOICE_INSTANCE_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">OLD_INVOICE_INSTANCE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CH_REASON" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CH_REASON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_QQLSH" maxlength="200" datatype="String" type="COL" remark="请求税控开具电子发票成功后，返回 ">
+        <mapingcol datatype="VARCHAR2">INVOICE_QQLSH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_QQDDH" maxlength="200" datatype="String" type="COL" remark="请求税控开具电子发票成功后，返回 ">
+        <mapingcol datatype="VARCHAR2">INVOICE_QQDDH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_CZDM" maxlength="200" datatype="String" type="COL" remark="向税控发起开票请求时需要传入，枚举由税控提供
+10 正常票开具
+11正常错票重开（最新已废弃）
+20退货折让红票
+21错票重开红票 （最新已废弃）
+22换票冲红（最新已废弃）">
+        <mapingcol datatype="VARCHAR2">INVOICE_CZDM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_AMOUNT" maxlength="10" datatype="Long" type="COL" remark="向税控申请开具发票时，制定开具的具体金额">
+        <mapingcol datatype="NUMBER">INVOICE_AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_TAX" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_TAX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_PRICE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INVOICE_PRICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_FWM" maxlength="200" datatype="String" type="COL" remark="请求税控开具电子发票成功后，返回 ">
+        <mapingcol datatype="VARCHAR2">INVOICE_FWM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INVOICE_EWM" maxlength="200" datatype="String" type="COL" remark="请求税控开具电子发票成功后，返回 ">
+        <mapingcol datatype="VARCHAR2">INVOICE_EWM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISSUING_TIME" maxlength="20" datatype="DateTime" type="COL" remark="请求税控开具电子发票成功后，返回 ">
+        <mapingcol datatype="DATE">ISSUING_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_ORG_ID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CREATE_ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_OP_ID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CREATE_OP_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT1" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT2" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT3" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT4" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT4</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXT5" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EXT5</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHARDING" maxlength="100" datatype="String" type="COL" remark="sharding">
+        <mapingcol datatype="VARCHAR2">SHARDING</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>
